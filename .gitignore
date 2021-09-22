@@ -27,7 +27,6 @@ a.out
 *.dll
 *.so
 *.so.*
-*.dylib
 
 # Executables
 *.exe
@@ -36,6 +35,7 @@ a.out
 *.i*86
 *.x86_64
 *.hex
+fdf
 
 # Debug files
 *.dSYM/
