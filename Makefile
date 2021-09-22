@@ -5,10 +5,12 @@ NAME			= fdf
 
 SRCS			= fdf_main.c \
 				\
-				gnl_utils/get_next_line.c  gnl_utils/get_next_line_utils.c \
+				gnl/get_next_line.c  gnl/get_next_line_utils.c \
 
 $(NAME):
+	@make -C ./libft
 	@gcc $(CFLAGS) $(SRCS) \
+	-L ./libft -lft \
 	-I /usr/local/include -L /usr/local/bin -lmlx \
 	-framework OpenGl -framework AppKit libmlx.dylib \
 	-o $(NAME) && \
